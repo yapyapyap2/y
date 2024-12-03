@@ -14,7 +14,7 @@ class Organizer{
     }
     void draw(){
         float now=millis();
-        if(now-lastUpdate >3000){
+        if(now-lastUpdate >100){
             lastUpdate=now;
             current=(current+1)%numPhotos;
         }
